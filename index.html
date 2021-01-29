@@ -1,0 +1,37 @@
+<!doctype html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="uft-8"> 
+
+    <title>Prog 209-HW5</title> 
+
+</head> 
+
+<body> 
+
+    <form name="addMovieForm" onsubmit="return false">
+        <table>
+            <tr><td>Movie Title:</td>
+                <td><input name="movieTitle" id="movieTitle"></input></td>
+            </tr>
+            <tr><td>Movie Rating (from 1-5):</td>
+                <td><input name="movieRating" id="movieRating"></input></td>
+            </tr>
+        </table>
+        <input type="submit" value="Add Movie" onclick="addMovieEvent()">
+    </form>
+
+    <button type="button">Show Movies</button>
+    <textarea id="allMoviesList" name="moviesList" rows="5" cols="50" readonly>
+
+
+    </textarea>
+
+<script src="main.js"></script>
+<script src="movie.js"></script> 
+</body> 
+
+</html>
