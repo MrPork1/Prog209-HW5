@@ -6,7 +6,8 @@
 
     <meta charset="uft-8"> 
 
-    <title>Prog 209-HW5</title> 
+    <title>Prog 209-HW5</title>
+    <link rel="stylesheet" href="styles.css"> 
 
 </head> 
 
@@ -22,16 +23,15 @@
             </tr>
         </table>
         <div id="holder">
-        <input type="submit" value="Add Movie" onclick="addMovieEvent()" id="add">
+        <input type="submit" value="Add Movie" onclick="createMovieObjectAndValidate()" id="add">
         </div>
     </form>
 
-    <button type="button">Show Movies</button>
+    <button onclick="showMovieList()">Show Movies</button>
     </br>
-    <textarea id="allMoviesList" name="moviesList" rows="5" cols="50" readonly>
+    <div id="moviesListHere">
 
-
-    </textarea>
+    </div>
 
 <script src="main.js"></script>
 <script src="movie.js"></script> 

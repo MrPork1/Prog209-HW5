@@ -48,9 +48,10 @@ button:hover
   color: rgb(235, 232, 232);
 }
 
-textarea
+#moviesListHere
 {
-  margin-top: 7px;
-  padding: 5px;
+  margin-top: 10px;
+  padding: 10px;
   border: 1.5px solid rgb(0, 101, 233);
+  width: 50%;
 }
