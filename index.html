@@ -21,10 +21,13 @@
                 <td><input name="movieRating" id="movieRating"></input></td>
             </tr>
         </table>
-        <input type="submit" value="Add Movie" onclick="addMovieEvent()">
+        <div id="holder">
+        <input type="submit" value="Add Movie" onclick="addMovieEvent()" id="add">
+        </div>
     </form>
 
     <button type="button">Show Movies</button>
+    </br>
     <textarea id="allMoviesList" name="moviesList" rows="5" cols="50" readonly>
 
 

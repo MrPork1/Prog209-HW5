@@ -1,0 +1,56 @@
+form
+{
+  background-color: rgb(205, 233, 255);
+  border: 1.5px solid rgb(0, 101, 233);
+  margin-bottom: 45px;
+  width: 50%;
+  padding: 10px;
+}
+
+td
+{
+  padding: 10px;
+}
+
+#holder
+{
+  text-align: center;
+}
+
+
+#add
+{
+  border-radius: 4px;
+  border: 0.5px solid rgb(205, 233, 255);
+  background-color:  rgb(0, 101, 233);
+  color: white;
+  padding: 5px;
+}
+
+#add:hover
+{
+  background-color:   rgb(7, 90, 199);
+  color: rgb(235, 232, 232);
+}
+
+button
+{
+  border-radius: 4px;
+  border: 0.5px solid rgb(205, 233, 255);
+  background-color:  rgb(0, 101, 233);
+  color: white;
+  padding: 5px;
+}
+
+button:hover
+{
+  background-color:   rgb(7, 90, 199);
+  color: rgb(235, 232, 232);
+}
+
+textarea
+{
+  margin-top: 7px;
+  padding: 5px;
+  border: 1.5px solid rgb(0, 101, 233);
+}
