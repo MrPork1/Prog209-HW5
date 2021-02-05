@@ -32,6 +32,6 @@ function showMovieList()
     {
         let li = document.createElement('li');
         ul.appendChild(li);
-        li.innerHTML = moviesArray[i].returnStr();
+        li.innerHTML = moviesArray[i].toString();
     };
 }

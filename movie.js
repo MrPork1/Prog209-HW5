@@ -9,7 +9,7 @@ function Movie(title, rating)
       return true;
     }
   };
-  this.returnStr = function()
+  this.toString = function()
   {
     return this.movieTitle + " " + this.movieRating;
   };
