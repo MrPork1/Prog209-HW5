@@ -4,17 +4,13 @@ function Movie(title, rating)
   this.movieRating = rating,
   this.validate = function() 
   {
-    if (document.getElementById("movieRating").value < 1 || document.getElementById("movieRating").value > 5 || document.getElementById("movieTitle").value == "")
+    if (this.movieTitle != "" && this.movieRating >= 1 && this.movieRating <= 5)
     {
-      return false;
-    }
-    else
-    {
-      return true
+      return true;
     }
   };
-  this.toString = function()
+  this.returnStr = function()
   {
-    return title + " " + rating;
+    return this.movieTitle + " " + this.movieRating;
   };
-};
+}

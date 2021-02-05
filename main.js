@@ -1,12 +1,12 @@
 let moviesArray = [];
 
-function addMovieEvent()
+function createMovieObjectAndValidate()
 {
     let inputField = document.forms["addMovieForm"]["movieTitle"].value;
     let ratingField = document.forms["addMovieForm"]["movieRating"].value;
 
     let newMovie = new Movie(inputField, ratingField);
-    if (newMovie.validate() == true)
+    if (newMovie.validate())
     {
         console.log("adding movie to array!");
         moviesArray.push(newMovie);
@@ -23,17 +23,15 @@ function addMovieEvent()
 
 function showMovieList()
 {
-    let myUI = document.getElementById("allMoviesList");
+    let myUI = document.getElementById("moviesListHere");
     myUI.innerHTML = "";
 
-
+    let ul = document.createElement('ul');
+    document.getElementById('moviesListHere').appendChild(ul);
     for(let i = 0; i < moviesArray.length; i++)
     {
-        let ul = document.createElement('ul');
-        document.getElementById('allMoviesList').appendChild(ul);
         let li = document.createElement('li');
         ul.appendChild(li);
-        document.getElementById("allMoviesList").innerHTML = moviesArray[i];
-        li.innerHTML = moviesArray[i];
+        li.innerHTML = moviesArray[i].returnStr();
     };
 }
