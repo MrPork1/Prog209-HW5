@@ -11,6 +11,6 @@ function Movie(title, rating)
   };
   this.toString = function()
   {
-    return this.movieTitle + " " + this.movieRating;
+    return this.movieTitle + " (" + this.movieRating + " out of 5)";
   };
 }
